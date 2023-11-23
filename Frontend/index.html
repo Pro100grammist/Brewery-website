@@ -19,14 +19,14 @@
         <div class="header-container">
           <nav class="header-menu">
             <a href="">
-              <img src="./images/logo.webp" alt="Логотип Нової Броварні" />
+              <img src="./images/logo.webp" alt="Логотип Nature Brewery"/>
             </a>
             <!-- menubar -->
             <ul class="header-menu-list">
-              <li><a class="link" href="#tradition-section">Традиції</a></li>
-              <li><a class="link" href="#brewers-section">Пивовари</a></li>
-              <li><a class="link" href="#formats-section">Формати</a></li>
-              <li><a class="link" href="#contacts-section">Контакти</a></li>
+              <li><a class="link-header" href="#tradition-section">Традиції</a></li>
+              <li><a class="link-header" href="#brewers-section">Пивовари</a></li>
+              <li><a class="link-header" href="#formats-section">Формати</a></li>
+              <li><a class="link-header" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
           <button class="button" type="button">Замовити дзвінок</button>
@@ -36,15 +36,15 @@
     <main>
       <section class="hero-section">
         <div>
-          <h1 class="hero-title"><span class="accent">Нова</span> Броварня</h1>
+          <h1 class="hero-title" lang="en"><span class="accent">Nature</span> Brewery</h1>
         </div>
       </section>
       <section class="advantages-section">
         <div class="container">
           <ul class="advantages">
             <li class="adv-item">Відомий бренд на ринку</li>
-            <li class="adv-item">Гнучкі за бюджетом формати</li>
-            <li class="adv-item">Досвідчена команда</li>
+            <li class="adv-item">Широкий вибір</li>
+            <li class="adv-item">Професійна команда</li>
           </ul>
         </div>
       </section>
@@ -52,9 +52,9 @@
         <div class="container">
           <div class="traditions-container">
             <div class="traditions-content">
-              <h2 class="traditions-title section-title">Сучасний формат. Класичні традиції</h2>
+              <h2 class="traditions-title section-title">Сучасний формат. Класичні традиції.</h2>
               <p class="tradition-text">
-                <span class="brand">new brewery</span> — це броварня, що об'єднала найкращі традиції
+                <span class="brand">nature brewery</span> — це броварня, що об'єднала найкращі традиції
                 варіння та сучасні технології, зберігаючи при цьому неперевершений смак аутентичних
                 пивоварів. Ми пишаємося своєю здатністю поєднувати унікальні рецепти з використанням
                 натуральних інгредієнтів, створюючи справжню симфонію смаку у кожній краплі нашого
@@ -67,13 +67,13 @@
                 вас особливим."
               </p>
             </div>
-            <img src="./images/brewery.jpg" alt="" />
+            <img src="./images/brewery.jpg" alt="Nature brewery image" />
           </div>
         </div>
       </section>
       <section class="section" id="brewers-section">
         <div class="container">
-          <h2 class="brewers-title section-title">Наші <span class="accent">пивовари</span></h2>
+          <h2 class="brewers-title section-title centered">Наші <span class="accent">пивовари</span></h2>
           <ul>
             <li>
               <article>
@@ -82,7 +82,7 @@
                 <p>текст 1</p>
                 <p>текст 2</p>
               </article>
-              <img src="./images/coolman.jpg" alt="" />
+              <img class="brewer-image-left" src="./images/coolman.jpg" alt="Coolman" />
             </li>
             <li>
               <article>
@@ -91,44 +91,44 @@
                 <p>текст 1</p>
                 <p>текст 2</p>
               </article>
-              <img src="./images/pivchansky.jpg" alt="" />
+              <img class="brewer-image-right" src="./images/pivchansky.jpg" alt="Pivchansky" />
             </li>
           </ul>
         </div>
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Формати</h2>
-          <ul>
-            <li>
-              <article>
+          <h2 class="formats-title section-title centered">Формати</h2>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-tile">
                 <h3 class="format-title" lang="en">Mini-brewery</h3>
                 <div class="format-text">
-                  <p>Mini brewery 100L</p>
-                  <p>Mini brewery 200L</p>
-                  <p>Mini brewery 300L</p>
-                  <p>Mini brewery 500L</p>
+                  <p>Nano brewery 100L</p>
+                  <p>Microbrewery 200L</p>
+                  <p>Minibrewery 300L</p>
+                  <p>Vessel brewery 500L</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-tile">
                 <h3 class="format-title" lang="en">Industrial Brevery</h3>
                 <div class="format-text">
-                  <p>Industrial brevery 1000L</p>
+                  <p>Beerhouse 1000L</p>
                   <p>Industrial brevery 2500L</p>
-                  <p>Industrial brevery 5000L</p>
-                  <p>Industrial brevery 10000L</p>
+                  <p>Large Scale Brewery 5000L</p>
+                  <p>Large Commercial Brevery 10000L</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-tile">
                 <h3 class="format-title" lang="en">Company store</h3>
                 <div class="format-text">
-                  <p></p>
-                  <p></p>
-                  <p></p>
+                  <p>Item 1</p>
+                  <p>Item 2</p>
+                  <p>Item 3</p>
                 </div>
               </article>
             </li>
@@ -151,11 +151,11 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-background">
       <div class="container">
         <nav>
           <a href="">
-            <img src="./images/logo.webp" alt="Логотип Нової Броварні" />
+            <img class="logo-stamp" src="./images/logo.svg" alt="Nature Brewery logo" />
           </a>
           <!--menubar-->
           <ul>
@@ -175,18 +175,19 @@
               >
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/">
                 <img src="./images/fb_icon.svg" alt="Іконка facebook" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/">
                 <img src="./images/insta_icon.svg" alt="Іконка instagram" />
               </a>
             </li>
           </ul>
           <a class="contact" href="#">Політика конфіденційності</a>
-          <p class="copyright">&copy; 2023 Дані захищені</p>
+          <a class="copyright" href="https://pro100grammer.pythonanywhere.com/">&copy; 2023 Oleh Sencha</a>
+          <p class="copyright"></p>
         </address>
       </div>
     </footer>
