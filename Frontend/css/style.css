@@ -244,6 +244,21 @@ address {
     flex-basis: calc((100% - 40px) / 3);
 }
 
+.arrow-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow {
+    fill: var(--color-primary-black)
+}
+
 .contact-title {
     margin-bottom: 16px;
 }
@@ -274,4 +289,12 @@ address {
 
 .logo-stamp {
     transform: rotate(330deg);
+}
+
+.social-icons {
+    fill: var(--color-primary-light)
+}
+
+.social-icons:hover {
+    fill: var(--color-primary-black)
 }
