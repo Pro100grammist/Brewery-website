@@ -7,7 +7,9 @@
 }
 
 /* global */
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -38,6 +40,10 @@ ul {
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
+}
+
+a {
+    display: inline-block;
 }
 
 address {
@@ -183,6 +189,8 @@ address {
     margin-bottom: 42px;
 }
 
+/* brewers  */
+
 .brewers-title {
     max-width: 520px;
     margin-top: 0;
@@ -199,10 +207,20 @@ address {
     content: '';
 }
 
-.brewer-title {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 16px;
+.brewers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.brewery-master {
+    flex-basis: calc((100% - 30px) / 2);
+
+}
+
+.brewer-rectangle {
+    display: flex;
+    gap: 30px;
+
 }
 
 .brewer-image-left {
@@ -211,6 +229,24 @@ address {
 
 .brewer-image-right {
     border-radius: 200px 4px 4px 4px;
+}
+
+.brewer-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.brewer-text {
+
+}
+
+/* formats */
+
+.inner-container-formats {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .formats-title {
@@ -246,6 +282,7 @@ address {
 
 .arrow-button {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -259,8 +296,23 @@ address {
     fill: var(--color-primary-black)
 }
 
+/* feedback and map */
+
+.contacts-section {
+    padding-bottom: 96px;
+}
+
+.inner-container-contacts {
+    display: flex;
+    gap: 32px;
+}
+
 .contact-title {
     margin-bottom: 16px;
+}
+
+.map {
+    flex-shrink: 0;
 }
 
 /* footer */
@@ -270,7 +322,43 @@ address {
     background-size: cover;
     background-position: center;
     background-color: var(--color-primary-black);
+    padding: 48px;
 }
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.basement-nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.basement-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.basement-logo {
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.basement-menubar {
+    flex-basis: 50%;
+}
+
+.address-items {
+    flex-basis: 50%;
+}
+
+.privacy-policy {
+    flex-basis: 50%;
+}
+
 .contact {
     color: var(--color-primary-light);
     font-size: 16px;
@@ -285,6 +373,10 @@ address {
 .copyright {
     font-size: 14px;
     color: var(--color-primary-light);
+}
+
+.copyright:hover {
+    color: var(--color-hop);
 }
 
 .logo-stamp {
