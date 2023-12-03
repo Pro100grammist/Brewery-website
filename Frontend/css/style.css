@@ -50,6 +50,19 @@ address {
     font-style: normal;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* button */
 .button {
@@ -166,7 +179,7 @@ address {
     text-align: center;
 }
 
-.section-title .accent {
+.section-title.accent {
     color: var(--color-primary-black);
 }
 
@@ -319,6 +332,10 @@ address {
     margin-bottom: 16px;
 }
 
+.contact-title.centered {
+    text-align: center;
+}
+
 .map {
     flex-shrink: 0;
 }
@@ -424,10 +441,12 @@ address {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 520px;
-    max-height: 520px;
+    max-width: 880px;
+    max-height: 880px;
     background-color: var(--color-primary-light);
-    border-radius: 30px;
+    padding: 128px;
+    border-radius: 32px;
+    /* overflow: auto; */
 }
 
 .btn-close {
@@ -435,3 +454,37 @@ address {
     top: 40px;
     right: 40px;
 }
+
+.form-field {
+    margin-bottom: 32px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input {
+    padding: 16px 42px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--color-hop);
+
+}
+
+.form-input:focus {
+    border-color: var(--color-brand);
+    outline: none;
+}
+
+textarea {
+    height: 160px;
+    width: 100%;
+    resize: none;
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto;
+}
+

@@ -165,8 +165,43 @@
         <div class="container">
           <div class="inner-container-contacts">
             <div class="contact-form">
-              <h2 class="contact-title section-title">Приєднуйтесь до нашої мережі броварень</h2>
+              <h2 class="contact-title centered">Приєднуйтесь до нашої мережі броварень</h2>
               <p>Заповніть форму і ми зв'яжемося з Вами.</p>
+              <form name="contact-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name">Ваше ім'я</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="phone-number">Телефон</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+                <button class="form-button button" type="submit">Надіслати заявку</button>
+              </form>
             </div>
             <iframe
               class="map"
@@ -240,6 +275,45 @@
     <div class="back-drop is-hidden">
       <div class="feedback-form">
         <button class="btn-close">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Заповніть форму і ми зв'яжемося з Вами!</p>
+        <form name="call-order-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">Ваше ім'я</label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ваше ім'я"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="phone-number">Телефон</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-comment">Тут можна залишити коментар</label>
+            <textarea name="user-comment" id="user-comment" cols="30" rows="10"></textarea>
+          </div>
+          <button class="form-button button" type="submit">Надіслати заявку</button>
+        </form>
       </div>
     </div>
     <script src="./form.js"></script>
